@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
@@ -14,8 +15,9 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
 
         <RouterLink to="/contador">Contador</RouterLink>
-        <RouterLink to="/agregar">Agregar</RouterLink>
-        <RouterLink to="/list">Lista</RouterLink>
+        <RouterLink to="/agregar">Agregar cuadrados</RouterLink>
+        <RouterLink to="/lista">Lista</RouterLink>
+        <RouterLink to="/imprimir">Imprimir</RouterLink>
        
       </nav>
     </div>

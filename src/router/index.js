@@ -35,12 +35,21 @@ const router = createRouter({
       component: () => import('../components/Agregar.vue'),
     },
     {
-      path: '/list',
+      path: '/lista',
       name: 'lista',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../components/List.vue'),
+    },
+
+    {
+      path: '/imprimir',
+      name: 'impprimir',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../components/PrintData.vue'),
     },
 
 
