@@ -1,0 +1,43 @@
+.cuadradito{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(220, 132, 247);
+   
+  }
+  
+  
+  .botones{
+    font-size: 1.5rem;
+    padding-inline: 1rem;
+    padding-block: 0.7rem;
+    border: solid rgb(155, 153, 153) 0.05rem;
+  }
+  /**/
+  
+  
+  
+  @media (min-width: 1024px) {
+    .about {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .content{
+  
+    display: flex;
+  }
+  
+  
+  .cajaDeCuadrados{
+    display: flex;
+    max-width: 20rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: fixed;
+    right: 20%;
+    top:20%;
+  
+  }
+  
