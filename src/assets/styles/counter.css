@@ -1,12 +1,12 @@
 
-.contenido{
+.content{
     display: flex;
     height: fit-content;
     gap: 2rem;
     font-size: 1rem;
   }
   
-  .botones{
+  .buttons{
     border: solid rgb(155, 153, 153) 0.05rem;
     padding-inline: 1.1rem;
     color: rgb(46, 45, 45);
@@ -16,12 +16,12 @@
   }
 
 
-  .botones:hover{
+  .buttons:hover{
     background-color: rgb(209, 205, 208);
  
   }
   
-  .botones2{
+  .buttons2{
     border: solid rgb(155, 153, 153) 0.05rem;
     
     border-radius: 1rem;

@@ -2,43 +2,43 @@
 
 import { ref } from 'vue';
 
-const contador = ref(0);
+const counter = ref(0);
 
-const incrementar = () => {
-  contador.value++;
+const increase = () => {
+  counter.value++;
 }
 
-const decrementar = () => {
-  contador.value--;
+const decrease = () => {
+  counter.value--;
 };
 
 const visible = ref(true);
 
 // Esta función alterna el texto del botón dependiendo de la visibilidad
-const alternar = () => {
+const alternate = () => {
   return visible.value ? 'Ocultar' : 'Mostrar';
 }
 
 </script>
 
 <template>
-  <div class="ejemplo">
+  <div class="example">
     <h1>Contador</h1>
     <div> 
           <!--Usamos la directiva v-on abreviada: @ -->
 
-          <div v-show="visible" class="contenido"> 
-    <button class="botones" @click="decrementar">-</button>
-    <p class="countNumber">{{ contador }}</p>
+          <div v-show="visible" class="content"> 
+    <button class="buttons" @click="decrease">-</button>
+    <p class="countNumber">{{ counter }}</p>
     <!--Usamos la directiva v-on -->
-    <button class = "botones" v-on:click="incrementar">+</button> 
+    <button class = "buttons" v-on:click="increase">+</button> 
     </div>
   </div>
   <br>
-    <button class = "botones2" @click="visible = !visible">{{alternar()}}</button>
+    <button class = "buttons2" @click="visible = !visible">{{alternate()}}</button>
   </div>
 </template>
 
-<style scoped src="../assets/styles/contador.css"></style>
+<style scoped src="../assets/styles/counter.css"></style>
 
 

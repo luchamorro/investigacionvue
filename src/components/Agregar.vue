@@ -5,29 +5,29 @@ import { ref } from 'vue';
 
 //array reactivo para almacenar los cuadraditos
 
-const cuadraditos = ref([]);
+const littleSquares = ref([]);
 
 
-const agregarCuadros = () => {
+const addSquares = () => {
  
-  cuadraditos.value.push(""); //añadir nuevo cuadrado al array
+  littleSquares.value.push(""); //añadir nuevo cuadrado al array
 
 }
 
 </script>
 
 <template>
-  <div class="ejemplo">
+  <div class="example">
     <h2>Agregar</h2>
   <br>
     
    <div class="content">  
      
-    <button class="botones" @click="agregarCuadros">+</button>
+    <button class="buttons" @click="addSquares">+</button>
   
-    <div class="cajaDeCuadrados">
-    <div v-for = "(cuadradito,index) in cuadraditos" :key="index" class="cuadradito">
-      {{ cuadradito }}</div>
+    <div class="squaresBox">
+    <div v-for = "(littleSquare,index) in littleSquares" :key="index" class="littleSquare">
+      {{ littleSquare }}</div>
     </div>
   </div>
   </div>
@@ -36,6 +36,6 @@ const agregarCuadros = () => {
   
 </template>
 
-<style scoped src="../assets/styles/agregar.css">
+<style scoped src="../assets/styles/add_squares.css">
 
 </style>

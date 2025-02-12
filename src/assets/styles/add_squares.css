@@ -1,4 +1,4 @@
-.cuadradito{
+.littleSquare{
     width: 2rem;
     height: 2rem;
     background-color: rgb(220, 132, 247);
@@ -6,7 +6,7 @@
   }
   
   
-  .botones{
+  .buttons{
     font-size: 1.5rem;
     padding-inline: 1rem;
     padding-block: 0.7rem;
@@ -30,7 +30,7 @@
   }
   
   
-  .cajaDeCuadrados{
+  .squaresBox{
     display: flex;
     max-width: 20rem;
     flex-wrap: wrap;
