@@ -1,18 +1,19 @@
 <script setup>
 
 import { ref } from 'vue';
-
-
 //array reactivo para almacenar los cuadraditos
-
 const littleSquares = ref([]);
 
-
 const addSquares = () => {
- 
-  littleSquares.value.push(""); //añadir nuevo cuadrado al array
 
-}
+  //Clases disponibles
+  const classes = ["littleSquare", "littleSquare2", "littleSquare3", "littleSquare4", "littleSquare5", "littleSquare6" ];
+  //Seleccionar una clase aleatoria
+  const randomClass = classes[Math.floor(Math.random()*classes.length)];
+ 
+  littleSquares.value.push({class: randomClass}); //añadir nuevo cuadrado al array
+
+};
 
 </script>
 
@@ -23,17 +24,16 @@ const addSquares = () => {
     
    <div class="content">  
      
-    <button class="buttons" @click="addSquares">+</button>
+    <button class="buttons" @click="addSquares" >+</button>
+  
   
     <div class="squaresBox">
-    <div v-for = "(littleSquare,index) in littleSquares" :key="index" class="littleSquare">
-      {{ littleSquare }}</div>
+    <div v-for = "(square,index) in littleSquares" :key="index" :class="square.class">
+      </div>
     </div>
   </div>
   </div>
   <br>
-    
-  
 </template>
 
 <style scoped src="../assets/styles/add_squares.css">
