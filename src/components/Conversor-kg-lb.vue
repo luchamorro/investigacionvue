@@ -1,5 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
+ 
+
 
 const kg = ref(1) // Valor inicial en kilogramos
 
@@ -20,6 +22,8 @@ const lb = computed({
     <label>Libras:</label><br>
     <input v-model="lb" type="number"  step="0.1">
   </div>
+<br>
+ 
 </template>
 
 <style scoped>

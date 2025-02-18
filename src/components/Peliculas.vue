@@ -46,24 +46,11 @@
   </script>
   
   <style scoped>
-  /* Estilos generales */
-  body {
-    font-family: 'Franklin Gothic Medium';
-    margin: 0;
-    padding: 20px;
-    background-color: rgb(200, 255, 178);
-  }
-  
-  /* Contenedor de la lista */
-  main {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  /* Tarjeta de película */
+    /* Tarjeta de película */
   .grid-container {
-    width: 25rem;
-    height: fit-content;
+    width: 100%;
+    max-height: 30vh;
+    overflow: auto;
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -81,7 +68,7 @@
   }
   
   /* Imagen de la película */
-  .grid-container img {
+  .grid-container .pelicula img {
     min-width: 30%;
     max-width: 70%;
     height: auto;
