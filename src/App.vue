@@ -19,6 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/lista">Lista</RouterLink>
         <RouterLink to="/imprimir">Imprimir</RouterLink>
         <RouterLink to="/conversor">Conversor</RouterLink>
+        <RouterLink to="/peliculas">Películas</RouterLink>
        
       </nav>
     </div>
