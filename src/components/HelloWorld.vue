@@ -22,6 +22,10 @@ h1 {
   font-size: 2.3rem;
   position: relative;
   top: -10px;
+  font-family: Tektur, serif;
+  font-size: 3rem;
+  line-height: 2.8rem;
+  font-weight: 600;
 }
 
 h3 {

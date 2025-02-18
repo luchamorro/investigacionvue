@@ -18,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/agregar">Agregar cuadrados</RouterLink>
         <RouterLink to="/lista">Lista</RouterLink>
         <RouterLink to="/imprimir">Imprimir</RouterLink>
+        <RouterLink to="/conversor">Conversor</RouterLink>
        
       </nav>
     </div>
@@ -60,6 +61,8 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  font-family: Homenaje,serif;
+  font-size: 1.8rem;
 }
 
 nav a:first-of-type {
