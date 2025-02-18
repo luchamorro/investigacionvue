@@ -60,7 +60,6 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
   background-color: #ffffff;
   background-image: url('../img/logo-vue.png'), linear-gradient(to top right, #a9f0b2 5%, #ffffff 55%);
   background-size: 150px 150px, cover;

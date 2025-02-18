@@ -1,6 +1,10 @@
 <script setup>
 
 import { ref } from 'vue';
+import { useCounter } from '../composables/useCounter';
+
+// carga del contador composable
+const { contador, sumar, reiniciar } = useCounter(0);
 
 const counter = ref(0);
 
@@ -36,7 +40,16 @@ const alternate = () => {
   </div>
   <br>
     <button class = "buttons2" @click="visible = !visible">{{alternate()}}</button>
+    <br>
+    <div class="composable">
+      <h2>Contador Composable</h2>
+      <button class="buttons" @click="sumar">{{ contador }}</button>
+      <button class="buttons" @click="reiniciar">Reset</button>
+    </div>
   </div>
+
+
+
 </template>
 
 <style scoped src="../assets/styles/counter.css"></style>

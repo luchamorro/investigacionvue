@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/imprimir">Imprimir</RouterLink>
         <RouterLink to="/conversor">Conversor</RouterLink>
         <RouterLink to="/peliculas">Películas</RouterLink>
+        <RouterLink to="/about">Formulario</RouterLink>
        
       </nav>
     </div>
@@ -51,7 +52,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #31035c;
 }
 
 nav a.router-link-exact-active:hover {
