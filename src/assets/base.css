@@ -61,8 +61,12 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
-  transition:
+  background-color: #ffffff;
+  background-image: url('../img/logo-vue.png'), linear-gradient(to top right, #a9f0b2 5%, #ffffff 55%);
+  background-size: 150px 150px, cover;
+  background-position: right 0px top 0px, center;
+  background-repeat: no-repeat;
+   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;

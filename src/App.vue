@@ -32,11 +32,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  max-height: 120vh;
 }
 
 .logo {
-  display: block;
+  display: flex;
   margin: 0 auto 2rem;
 }
 
@@ -69,7 +69,7 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
+    
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -81,6 +81,8 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    
+    
   }
 
   nav {
@@ -90,6 +92,8 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>
