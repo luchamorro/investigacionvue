@@ -10,7 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Investigación Vue" />
-     
+      <RouterLink to="/">Home</RouterLink>
 
       <nav>
 
